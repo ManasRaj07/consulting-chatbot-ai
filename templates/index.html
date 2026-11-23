@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A reusable consulting website chatbot demo.">
+  <title>{{ business.name }} | Website Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body data-client-id="{{ client_id }}">
+  <main class="page">
+    <nav class="topbar">
+      <a class="brand" href="#" aria-label="Home"><span class="brand-mark">N</span><span id="business-name">{{ business.name }}</span></a>
+      <span class="demo-label">CHAT SUPPORT DEMO</span>
+    </nav>
+    <section class="hero">
+      <p class="eyebrow">CONSULTING · STRATEGY · GROWTH</p>
+      <h1>Clear answers.<br><span>Better next steps.</span></h1>
+      <p class="hero-copy">Explore our consulting services and get quick answers using the assistant. This assistant answers using the business information supplied by the team.</p>
+      <a class="hero-link" href="#assistant">Ask the assistant <span>↓</span></a>
+    </section>
+    <section class="info-grid" aria-label="Sample services">
+      <article><span>01</span><h2>Business strategy</h2><p>Clarify priorities and plan practical next steps.</p></article>
+      <article><span>02</span><h2>Market research</h2><p>Understand customers, competitors and opportunities.</p></article>
+      <article><span>03</span><h2>Operations</h2><p>Find ways to improve everyday business processes.</p></article>
+    </section>
+    <section class="assistant-section" id="assistant">
+      <div class="section-heading"><p class="eyebrow">HAVE A QUESTION?</p><h2>Chat with our assistant</h2><p>Try asking about services, pricing, process or contact details.</p></div>
+      <div class="chat-card">
+        <header class="chat-header"><div class="avatar">N</div><div><strong id="chat-title">Northstar Assistant</strong><small><i></i> Usually replies instantly</small></div><span class="header-tag">ONLINE</span></header>
+        <div id="messages" class="messages" aria-live="polite">
+          <div class="message bot"><div class="bubble">Hello! Welcome to {{ business.name }}. {{ business.greeting }}</div></div>
+        </div>
+        <div id="suggestions" class="suggestions"></div>
+        <form id="chat-form" class="chat-form">
+          <label class="sr-only" for="message-input">Your question</label>
+          <input id="message-input" maxlength="500" autocomplete="off" placeholder="Type your question..." required>
+          <button id="send-button" type="submit" aria-label="Send message">Send <span>➤</span></button>
+        </form>
+        <p class="disclaimer">AI demo · Answers may be imperfect. Please verify important details with the business.</p>
+      </div>
+    </section>
+    <footer>© <span id="year"></span> {{ business.name }} · Sample demonstration website</footer>
+  </main>
+  <script src="{{ url_for('static', filename='chat.js') }}"></script>
+</body>
+</html>

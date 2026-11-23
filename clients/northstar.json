@@ -1,0 +1,95 @@
+{
+  "business": {
+    "name": "Northstar Consulting",
+    "tagline": "Practical advice for growing businesses",
+    "greeting": "I can help with services, our process, fees and contact details.",
+    "email": "hello@example.com",
+    "phone": "+91 90000 00000",
+    "website": "https://example.com",
+    "description": "A sample consulting firm for demonstrating the chatbot. Replace all sample details with approved client information."
+  },
+  "suggestions": [
+    "What services do you offer?",
+    "How does your consulting process work?",
+    "How can I contact your team?"
+  ],
+  "faqs": [
+    {
+      "question": "What consulting services do you offer?",
+      "keywords": [
+        "services",
+        "consulting",
+        "strategy",
+        "business strategy",
+        "market research",
+        "operations",
+        "financial planning"
+      ],
+      "answer": "Northstar Consulting provides business strategy, market research and operations consulting for small and growing businesses. Replace this sample answer with the client's verified services."
+    },
+    {
+      "question": "Who do you work with?",
+      "keywords": [
+        "clients",
+        "customers",
+        "industries",
+        "small business",
+        "startup",
+        "companies",
+        "who"
+      ],
+      "answer": "We work with startups and small-to-medium businesses. Please update this answer to reflect the client's actual target customers."
+    },
+    {
+      "question": "How does your consulting process work?",
+      "keywords": [
+        "process",
+        "steps",
+        "method",
+        "consultation",
+        "meeting",
+        "first call",
+        "work"
+      ],
+      "answer": "Our typical process begins with an introductory discussion, followed by understanding your goals, proposing a scope of work and agreeing on next steps. Confirm the real process with the client before publishing."
+    },
+    {
+      "question": "How much do your services cost?",
+      "keywords": [
+        "price",
+        "pricing",
+        "cost",
+        "fees",
+        "charges",
+        "budget",
+        "quote"
+      ],
+      "answer": "Fees depend on the project scope and requirements. Contact our team for a tailored quote. Add published prices here only if the business has approved them."
+    },
+    {
+      "question": "How can I contact you?",
+      "keywords": [
+        "contact",
+        "email",
+        "phone",
+        "call",
+        "address",
+        "reach",
+        "talk"
+      ],
+      "answer": "You can email hello@example.com or call +91 90000 00000. Replace these sample details with the business's verified contact information."
+    },
+    {
+      "question": "Do you offer a free initial consultation?",
+      "keywords": [
+        "free",
+        "initial",
+        "consultation",
+        "discovery call",
+        "introductory meeting",
+        "first meeting"
+      ],
+      "answer": "Please contact our team to confirm whether an introductory consultation is available. Update this answer once the business confirms its policy."
+    }
+  ]
+}
